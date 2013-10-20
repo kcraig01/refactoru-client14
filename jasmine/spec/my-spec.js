@@ -12,3 +12,10 @@ describe('repeatFunction', function() {
   expect(str).toEqual('ohhihihi');
  });
 });
+
+describe('repeatMore', function() {
+ it('should call a function counter times', function() {
+  Repeater.repeatMore("cat");
+  expect(typeof count).toBe('undefined');
+});
+});

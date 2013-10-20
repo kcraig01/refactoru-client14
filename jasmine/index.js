@@ -97,10 +97,10 @@ var Repeater = (function Repeater(){
 			return repeatMoreArray;
 		}
 
-		var repeatFunctionTwice = function repeatFunctionTwice(f,n){
-			for(i=0;i<n;i++){
-				repeatFunction(f,n);
-			}
+		var repeatFunctionTwice = function repeatFunctionTwice(f){
+		
+				repeatFunction(f,2);
+
 			return repeatFunctionTwice;
 			}
 
@@ -115,5 +115,5 @@ var test = 'oh';
 var write = function() { test += 'hi'; };
 console.log(Repeater.repeatFunction(write, 6));
 console.log(test)
-console.log(Repeater.repeatFunctionTwice(write,2));
+console.log(Repeater.repeatFunctionTwice(write));
 console.log(test)
